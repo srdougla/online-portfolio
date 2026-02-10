@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="websites-body">
+
+    <div class="header-gray">
+        <div></div>
+        Virtual Desktop by Shannon
+        <div class="header-controls">
+            <div id="back-btn">
+                <a href="index.html"><button><</button></a>
+            </div>
+            <div id="x-btn">
+                <a href="index.html"><button>X</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-screen-top">
+            <h1>System Message</h1>
+        </div>
+        <h1>Here are all the websites I've created and/or am working on.</h1>
+        <h2>Navigate using the tabs at the top to explore my different creations.</h2>
+        <h3>I'm not paying to host all of these... So hopefully this is the next best experience! </h3>
+
+        <div class="intro-screen-button">
+            <button onclick="hideSection('intro-screen')">Okay</button>
+        </div>
+    </div>
+
+    <div class="websites-window">
+        <div class="tab-section">
+            <div class="tab" onclick="showWebsite('mysubletter')">MySubletter</div>
+            <div class="tab" onclick="showWebsite('theliftingplatform')">The Lifting Platform</div>
+            <div class="tab" onclick="showWebsite('cmsdataviewer')">CMS Data Viewer</div>
+            <div class="tab" onclick="showWebsite('myvirtualpet')">My Virtual Pet</div>
+        </div>
+        
+        <div class="current-website">
+            <div id="mysubletter" class="website-content">
+                <h2>MySubletter</h2>
+                <p>Information about MySubletter goes here...</p>
+            </div>
+            
+            <div id="theliftingplatform" class="website-content">
+                <h2>The Lifting Platform</h2>
+                <p>As an Olympic Weightlifter, I was inspired to create a website where everything I wanted was located in one place.</p>
+                <p>PRs, notes, weight percentage calculations, training resources, and even a bar loading game, are all found on this website.</p>
+                <a href="https://srdougla.github.io/the-lifting-platform/" target="_blank"><button>Click here to view!</button></a>
+            </div>
+            
+            <div id="cmsdataviewer" class="website-content">
+                <h2>CMS Data Viewer</h2>
+                <p>Information about CMS Data Viewer goes here...</p>
+            </div>
+            
+            <div id="myvirtualpet" class="website-content">
+                <h2>My Virtual Pet</h2>
+                <p>This was a fun website I made for a web dev class. It was one of my first fully fleshed out websites built from scratch.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+<!-- Website List:
+ 1. MySubletter
+ 2. CMS Data Viewer
+ 3. The Lifting Platform
+
+-->

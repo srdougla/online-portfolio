@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+    <body class="index-page">
+        <div class="header-gray">
+        <div></div>
+        Virtual Desktop by Shannon
+        <div class="header-controls">
+        </div>
+    </div>
+
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-screen-top">
+            <h1>System Message</h1>
+        </div>
+        <h1>Welcome to my online portfolio.</h1>
+        <h2>Here I like to showcase my projects, accomplishments, interests, and more.</h2>
+        <h3>Double click an icon to learn more about me and what I've been working on.</h3>
+
+        <div class="intro-screen-button">
+            <button onclick="hideSection('intro-screen')">Got it!</button>
+        </div>
+    </div>
+
+    <div class="desktop-icons">
+        <!-- Left Column -->
+        <div class="icon-column">
+            <div class="icon-container" id="about-me">
+                <a href="about-me.html">
+                    <img src="icons/my-icon.png">
+                </a>
+                <h2>About Me</h2>
+            </div>
+            <div class="icon-container" id="websites">
+                <a href="websites.html">
+                    <img src="icons/websites.png">
+                </a>
+                <h2>Websites</h2>
+            </div>
+            <div class="icon-container" id="projects">
+                <a href="projects.html">
+                    <img src="icons/projects.png">
+                </a>
+                <h2>Projects</h2>
+            </div>
+            <div class="icon-container" id="work-experience">
+                <a href="work-experience.html">
+                    <img src="icons/work-experience.png">
+                </a>
+                <h2>Work Experience</h2>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="icon-column">
+            <div class="icon-container" id="my-etsy">
+                <a href="https://atrippiehippie.etsy.com" target="_blank">
+                    <img src="icons/etsy.png">
+                </a>
+                <h2>MY ETSY!</h2>
+            </div>
+            <div class="icon-container" id="just-for-fun">
+                <a href="just-for-fun.html">
+                    <img src="icons/just-for-fun.png">
+                </a>
+                <h2>Just for Fun</h2>
+            </div>
+            <div class="icon-container" id="linkedin">
+                <a href="https://www.linkedin.com/in/shannon-douglas-83434b253/" target="_blank">
+                    <img src="icons/linkedin.png">
+                </a>
+                <h2>LinkedIn</h2>
+            </div>
+            <div class="icon-container" id="download-resume">
+                <a href="Douglas, Shannon Resume 2026.pdf" download>
+                    <img src="icons/download-resume.png">
+                </a>
+                <h2>Download Resume</h2>
+            </div>
+            <div class="icon-container" id="contact-me">
+                <a href="mailto:shannonrdouglas@gmail.com" target="_blank">
+                    <img src="icons/contact-me.png">
+                </a>
+                <h2>Contact Me!</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Est. 2026 © SRD
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

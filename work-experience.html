@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience Timeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+       
+<body class="work-experience-page">
+
+    <div class="header-gray">
+        <div></div>
+        Virtual Desktop by Shannon
+        <div class="header-controls">
+            <div id="back-btn">
+                <a href="index.html"><button><</button></a>
+            </div>
+            <div id="x-btn">
+                <a href="index.html"><button>X</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-screen-top">
+            <h1>System Message</h1>
+        </div>
+        <br>
+        <h1>Here's my journey of employment (yay)!</h1>
+        <h1>Click on an icon to learn more.</h1>
+        <br><br><br>
+        <div class="intro-screen-button">
+            <button onclick="hideSection('intro-screen')">Okay!</button>
+        </div>
+        
+    </div>
+
+    <div class="timeline-container">
+        <h1>My Employment Timeline</h1>
+        
+        <div class="timeline">
+            <!-- Job Entry 1 -->
+            <div class="timeline-entry" data-duration="3" data-side="left">
+                <div class="year">2018</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job1">
+                    <img src="icons/tobacco.JPG" alt="Tobacco">
+                </div>
+                <div class="job-info" id="job1">
+                    <button class="close-btn">&times;</button>
+                    <h2>Tobacco Field Worker</h2>
+                    <h3>Hastings Tobacco</h3>
+                    <h3>Windsor, Connecticut</h3>
+                    <p class="duration">2018 - 2020 (3 summers)</p>
+                    <p>I worked on a tobacco field starting at 14, for three long and hot summers.</p>
+                    <ul>
+                        <li>Promoted to spearer after one season</li>
+                        <li>Built character</li>
+                        <li>Sweat so much I never had to pee!</li>
+                    </ul>
+                    <div class="job-img">
+                        <img src="icons/tobacco-me.JPG">
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Job Entry 2 -->
+            <div class="timeline-entry" data-duration="1.5" data-side="right">
+                <div class="year">2021</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job2">
+                    <img src="icons/gumdrops-and-lollipops.jpg" alt="Gumdrops and Lollipops">
+                </div>
+                <div class="job-info" id="job2">
+                    <button class="close-btn">&times;</button>
+                    <h2>Server</h2>
+                    <h3>Gumdrops and Lollipops</h3>
+                    <h3>Niantic, Connecticut</h3>
+                    <p class="duration">2020 (One summer)</p>
+                    <p>I worked as a "scooper" at an ice cream and candy shop on the Connecticut shoreline.</p>
+                    <ul>
+                        <li>Took orders, prepped dishes, and handled cash and credit transactions.</li>
+                        <li>Cherished my one free scoop a shift.</li>
+                        <li>Might have gotten arthritis from scooping rock hard ice cream.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job Entry 3 -->
+            <div class="timeline-entry" data-duration="1.5" data-side="left">
+                <div class="year">2021</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job3">
+                    <img src="icons/etsy-logo.jpg" alt="Etsy">
+                </div>
+                <div class="job-info" id="job3">
+                    <button class="close-btn">&times;</button>
+                    <h2>Owner/Founder of <a href="https://www.etsy.com/shop/aTrippieHippie?ref=shop_profile&listing_id=1067484463" target="_blank">aTrippieHippie</a></h2>
+                    <h3>Etsy Online Store</h3>
+                    <p class="duration">2021 - Now</p>
+                    <p>I started a business where I sell clothes designed all on my own!</p>
+                    <ul>
+                        <li>Gross revenue to date exceeds $133,000, unit sales over 2,200.</li>
+                        <li>Average 5-star rating across 880+ reviews.</li>
+                        <li>Sold my famous Skelehoodies in bulk to Universal Studios in 2022!</li>
+                    </ul>
+                    <div class="job-img">
+                        <img src="icons/etsy-me.JPG">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Entry 4 -->
+            <div class="timeline-entry" data-duration="1.5" data-side="right">
+                <div class="year">2022</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job4">
+                    <img src="icons/joey-garlics.jpg" alt="Joey Garlic's">
+                </div>
+                <div class="job-info" id="job4">
+                    <button class="close-btn">&times;</button>
+                    <h2>Restaurant Staff</h2>
+                    <h3>Joey Garlic's</h3>
+                    <h3>Manchester, Connecticut</h3>
+                    <p class="duration">2022</p>
+                    <p>I worked as a hostess and on the takeout staff at the delicious Joey Garlic's.</p>
+                    <ul>
+                        <li>Handled reservations and seating.</li>
+                        <li>Took orders, handled transactions, and packaged food.</li>
+                        <li>Discovered my love for hot honey on pizza.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job Entry 5 -->
+            <div class="timeline-entry" data-duration="1" data-side="left">
+                <div class="year">2023</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job5">
+                    <img src="icons/keney-park.png" alt="Keney Park">
+                </div>
+                <div class="job-info" id="job5">
+                    <button class="close-btn">&times;</button>
+                    <h2>Beverage Cart Driver</h2>
+                    <h3>Keney Park Tavern and Golf Course</h3>
+                    <h3>Hartford, Connecticut</h3>
+                    <p class="duration">2023 - 2024 (Two Summers)</p>
+                    <p>I got to stay outside all summer, driving around a golf cart and serving drinks and snacks to golfers.</p>
+                    <ul>
+                        <li>Prepared drinks, handled transactions, and stocked my cart based on what the golfers wanted.</li>
+                        <li>Helped out during banquets by serving food and tending to guests.</li>
+                        <li>Never once tried hitting a golf ball.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job Entry 6 -->
+            <div class="timeline-entry" data-duration="1" data-side="right">
+                <div class="year">2023</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job6">
+                    <img src="icons/uvm.jpg" alt="UVM">
+                </div>
+                <div class="job-info" id="job6">
+                    <button class="close-btn">&times;</button>
+                    <h2>Teaching Assistant</h2>
+                    <h3>University of Vermont</h3>
+                    <h3>Burlington, Vermont</h3>
+                    <p class="duration">2023 (Fall Semester)</p>
+                    <p>TA for Professor (Vermont Senator) Chittenden with the Information Technology course.</p>
+                    <ul>
+                        <li>Graded assignments and tests, proctored exams, organized review sessions.</li>
+                        <li>Held office hours twice a week for student drop-ins.</li>
+                        <li>Became best friends with Excel.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job Entry 7 -->
+            <div class="timeline-entry" data-duration="2" data-side="left">
+                <div class="year">2024</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job7">
+                    <img src="icons/uvm.jpg" alt="UVM">
+                </div>
+                <div class="job-info" id="job7">
+                    <button class="close-btn">&times;</button>
+                    <h2>Tutor</h2>
+                    <h3>University of Vermont</h3>
+                    <h3>Burlington, Vermont</h3>
+                    <p class="duration">2024 (Spring Semester)</p>
+                    <p>Official UVM tutor for the Financial Accounting course.</p>
+                    <ul>
+                        <li>Met with students and adapted my teaching to their preferred learning style.</li>
+                        <li>Created supplementary practice and review material.</li>
+                        <li>Could not think of a fun way to explain debits and credits.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job Entry 8 -->
+            <div class="timeline-entry" data-duration="2" data-side="right">
+                <div class="year">2025</div>
+                <div class="connector-line"></div>
+                <div class="node" data-job="job8">
+                    <img src="icons/travelers.jpeg" alt="Travelers">
+                </div>
+                <div class="job-info" id="job8">
+                    <button class="close-btn">&times;</button>
+                    <h2>Business Analytics Intern</h2>
+                    <h3>Travelers Insurance</h3>
+                    <h3>Hartford, Connecticut</h3>
+                    <p class="duration">2025 (Summer)</p>
+                    <p>Intern in the Business Insights and Analytics Leadership Development Program</p>
+                    <ul>
+                        <li>Analyzed data using Python libraries, collaborating in a repository.</li>
+                        <li>End-to-end development of customer-facing Microstrategy dashboards with relevant metrics.</li>
+                        <li>Coded a fully automated system for job assignments within a department.</li>
+                        <li>Led an intern newsletter team to produce bi-weekly company newsletters.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
