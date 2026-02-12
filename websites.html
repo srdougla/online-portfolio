@@ -36,33 +36,87 @@
 
     <div class="websites-window">
         <div class="tab-section">
-            <div class="tab" onclick="showWebsite('mysubletter')">MySubletter</div>
-            <div class="tab" onclick="showWebsite('theliftingplatform')">The Lifting Platform</div>
-            <div class="tab" onclick="showWebsite('cmsdataviewer')">CMS Data Viewer</div>
-            <div class="tab" onclick="showWebsite('myvirtualpet')">My Virtual Pet</div>
+            <div class="tab" id="tab1" onclick="showWebsite('mysubletter')">MySubletter</div>
+            <div class="tab" id="tab2" onclick="showWebsite('theliftingplatform')">The Lifting Platform</div>
+            <div class="tab" id="tab3" onclick="showWebsite('cmsdataviewer')">CMS Data Viewer</div>
+            <div class="tab" id="tab4" onclick="showWebsite('myvirtualpet')">My Virtual Pet</div>
         </div>
         
         <div class="current-website">
             <div id="mysubletter" class="website-content">
                 <h2>MySubletter</h2>
-                <p>Information about MySubletter goes here...</p>
+                <p>My biggest website, still in the works, is a housing platform dedicated to subletting.</p>
+
+                <div class="gallery">
+                    <button class="gallery-btn prev-btn" onclick="changeImage(-1, 'mysubletter')">⇦</button>
+
+                    <div class="gallery-content">
+                        <img id="gallery-image-mysubletter" src="ms-1.jpg" alt="gallery">
+                        <p id="gallery-caption-mysubletter">Caption</p>
+                    </div>
+
+                    <button class="gallery-btn next-btn" onclick="changeImage(1, 'mysubletter')">⇨</button>
+                </div>
+
             </div>
             
             <div id="theliftingplatform" class="website-content">
                 <h2>The Lifting Platform</h2>
                 <p>As an Olympic Weightlifter, I was inspired to create a website where everything I wanted was located in one place.</p>
-                <p>PRs, notes, weight percentage calculations, training resources, and even a bar loading game, are all found on this website.</p>
-                <a href="https://srdougla.github.io/the-lifting-platform/" target="_blank"><button>Click here to view!</button></a>
+                <p><em>The Lifting Platform</em> is a comprehensive, interactive web application designed for Olympic weightlifters to track progress, manage training programs, and improve technique. This full-stack single-page application (SPA) provides athletes with all the tools they need to excel in their sport.</p>
+                <p style="font-size: 22px;"><em>This website is hosted publicly. Click <a href="https://srdougla.github.io/the-lifting-platform/" target="_blank" style="font-size:30px; cursor: url('pointer.png'), pointer;">HERE</a> to check it out!</em></p>
+
+                <div class="gallery">
+                    <button class="gallery-btn prev-btn" onclick="changeImage(-1, 'theliftingplatform')">⇦</button>
+
+                    <div class="gallery-content">
+                        <img id="gallery-image-theliftingplatform" src="image1.jpg" alt="gallery">
+                        <p id="gallery-caption-theliftingplatform">Caption for Image 1.</p>
+                    </div>
+
+                    <button class="gallery-btn next-btn" onclick="changeImage(1, 'theliftingplatform')">⇨</button>
+                </div>
+                
             </div>
             
             <div id="cmsdataviewer" class="website-content">
                 <h2>CMS Data Viewer</h2>
-                <p>Information about CMS Data Viewer goes here...</p>
+                <p>For my final project in Database Systems, I created an interactive database viewer for data I pulled from the Center for Medicare & Medicaid Services (CMS).
+                    The user can select from 4 tables to view, query, update (edit/delete), and join -- all CRUD operations. I utilized Python (Flask APIs) and JavaScript to load data from CSV files into a database and write the functionality that converts form input in HTML
+                    to queries that actually run in the backend.</p>
+                <p style="font-size: 16px;"><em>This website is not hosted publicly. Navigate through the gallery below to get an idea of how it works!</em></p>
+
+                <div class="gallery">
+                    <button class="gallery-btn prev-btn" onclick="changeImage(-1, 'cmsdataviewer')">⇦</button>
+
+                    <div class="gallery-content">
+                        <img id="gallery-image-cmsdataviewer" src="image1.jpg" alt="gallery">
+                        <p id="gallery-caption-cmsdataviewer">Caption</p>
+                    </div>
+
+                    <button class="gallery-btn next-btn" onclick="changeImage(1, 'cmsdataviewer')">⇨</button>
+                </div>
+
             </div>
             
             <div id="myvirtualpet" class="website-content">
                 <h2>My Virtual Pet</h2>
-                <p>This was a fun website I made for a web dev class. It was one of my first fully fleshed out websites built from scratch.</p>
+                <p>This fun little website was for a midterm project in my Website Development class. It was one of my first fully fleshed out websites built from scratch. </p>
+                <p>Thank you to my AMAZING brother for drawing all the art for this website (for free!)!!</p>
+                <p style="font-size: 22px;"><em>This website is hosted publicly. Click <a href="https://srdougla.github.io/my-virtual-pet/" target="_blank" style="font-size:30px; cursor: url('pointer.png'), pointer;">HERE</a> to check it out!</em></p>
+
+                
+                <div class="gallery">
+                    <button class="gallery-btn prev-btn" onclick="changeImage(-1, 'myvirtualpet')">⇦</button>
+
+                    <div class="gallery-content">
+                        <img id="gallery-image-myvirtualpet" src="image1.jpg" alt="gallery">
+                        <p id="gallery-caption-myvirtualpet">Caption for Image 1.</p>
+                    </div>
+
+                    <button class="gallery-btn next-btn" onclick="changeImage(1, 'myvirtualpet')">⇨</button>
+                </div>
+            
             </div>
         </div>
 
